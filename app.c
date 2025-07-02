@@ -27,11 +27,15 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
-#include "sl_bt_api.h"
+#include <stdio.h>
+
+ #include "sl_bt_api.h"
 #include "sl_main_init.h"
 
 #include "sl_common.h"
 #include "sl_iostream_handles.h"
+#include "sli_iostream_uart.h"
+#include "sl_iostream.h"
 #include "sl_bluetooth.h"
 #include "gatt_db.h"
 #include "app.h"
@@ -147,6 +151,13 @@ static void reset_variables()
 
   memset(&counters, 0, sizeof(counters));
 }
+
+void my_rx_callback(void *data) {
+  // Handle received data here
+  app_log("New data\r\n");
+  app_proceed();
+}
+
 // Application Init.
 void app_init(void)
 {
@@ -154,6 +165,11 @@ void app_init(void)
   // Put your additional application init code here!                         //
   // This is called once during start-up.                                    //
   /////////////////////////////////////////////////////////////////////////////
+
+  sl_status_t status = sli_iostream_uart_subscribe_to_new_data(sl_iostream_uart_vcom_handle,
+                                                               my_rx_callback,
+                                                               NULL);
+  app_assert_status(status);
 }
 
 // Application Process Action.
@@ -169,7 +185,6 @@ void app_process_action(void)
     if (STATE_SPP_MODE == main_state) {
       send_spp_data();
     }
-
   }
 }
 
@@ -193,6 +208,22 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
       reset_variables();
       sc = sl_bt_gatt_server_set_max_mtu(247, &max_mtu_out);
       app_assert_status(sc);
+
+      // Retrieve the device MAC and append its 4 last digits to the device name
+      bd_addr address;
+      sc = sl_bt_system_get_identity_address(&address, NULL);
+      app_assert_status(sc);
+
+      // Set the device name to "SPP_xxxx" where xxxx is the last 4 digits of
+      // the device MAC address.
+      char device_name[9];
+      snprintf(device_name, sizeof(device_name), "SPP_%02X%02X",
+               address.addr[5], address.addr[4]);
+
+      sc = sl_bt_gatt_server_write_attribute_value(
+        gattdb_device_name, 0, sizeof(gattdb_device_name_len), (uint8_t *)device_name);
+      app_assert_status(sc);
+
       // Create an advertising set.
       sc = sl_bt_advertiser_create_set(&advertising_set_handle);
       app_assert_status(sc);
@@ -261,7 +292,8 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
       sl_bt_evt_gatt_server_characteristic_status_t char_status;
       char_status = evt->data.evt_gatt_server_characteristic_status;
 
-      if (char_status.characteristic == gattdb_spp_data) {
+      // We consider the tunnel opened only if our client has subscribed to notifications on the TX side
+      if (char_status.characteristic == gattdb_spp_data_tx) {
         if (char_status.status_flags == sl_bt_gatt_server_client_config) {
           // Characteristic client configuration (CCC) for spp_data has been
           //   changed
@@ -282,16 +314,20 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 
     case sl_bt_evt_gatt_server_attribute_value_id:
     {
-      if (evt->data.evt_gatt_server_attribute_value.value.len != 0) {
-        for (uint8_t i = 0;
-             i < evt->data.evt_gatt_server_attribute_value.value.len; i++) {
-          sl_iostream_putchar(
-            sl_iostream_vcom_handle,
-            evt->data.evt_gatt_server_attribute_value.value.data[i]);
-        }
-        counters.num_pack_received++;
-        counters.num_bytes_received +=
-          evt->data.evt_gatt_server_attribute_value.value.len;
+      // Data received over BLE (in the RX Characteristic) is sent over UART
+      if (evt->data.evt_gatt_server_attribute_value.attribute == gattdb_spp_data_rx)
+      {
+          if (evt->data.evt_gatt_server_attribute_value.value.len != 0) {
+            for (uint8_t i = 0;
+                 i < evt->data.evt_gatt_server_attribute_value.value.len; i++) {
+              sl_iostream_putchar(
+                sl_iostream_vcom_handle,
+                evt->data.evt_gatt_server_attribute_value.value.data[i]);
+            }
+            counters.num_pack_received++;
+            counters.num_bytes_received +=
+              evt->data.evt_gatt_server_attribute_value.value.len;
+          }
       }
     }
     break;
@@ -356,7 +392,7 @@ static void send_spp_data()
     //   command succeeds
     do {
       result = sl_bt_gatt_server_send_notification(conn_handle,
-                                                   gattdb_spp_data,
+                                                   gattdb_spp_data_tx,
                                                    len,
                                                    data);
       counters.num_writes++;
