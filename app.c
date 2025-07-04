@@ -261,7 +261,7 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
       sl_bt_evt_gatt_server_characteristic_status_t char_status;
       char_status = evt->data.evt_gatt_server_characteristic_status;
 
-      if (char_status.characteristic == gattdb_spp_data) {
+      if (char_status.characteristic == gattdb_spp_data_r || char_status.characteristic == gattdb_spp_data_w ) {
         if (char_status.status_flags == sl_bt_gatt_server_client_config) {
           // Characteristic client configuration (CCC) for spp_data has been
           //   changed
@@ -356,7 +356,7 @@ static void send_spp_data()
     //   command succeeds
     do {
       result = sl_bt_gatt_server_send_notification(conn_handle,
-                                                   gattdb_spp_data,
+                                                   gattdb_spp_data_w,
                                                    len,
                                                    data);
       counters.num_writes++;
