@@ -214,14 +214,17 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
       sc = sl_bt_system_get_identity_address(&address, NULL);
       app_assert_status(sc);
 
+      app_log("Device address: %02X:%02X:%02X:%02X:%02X:%02X\r\n",
+              address.addr[5], address.addr[4], address.addr[3],
+              address.addr[2], address.addr[1], address.addr[0]);
+
       // Set the device name to "SPP_xxxx" where xxxx is the last 4 digits of
       // the device MAC address.
       char device_name[9];
-      snprintf(device_name, sizeof(device_name), "SPP_%02X%02X",
-               address.addr[5], address.addr[4]);
+      sprintf(device_name, "SPP_%02X%02X", address.addr[1], address.addr[0]);
 
       sc = sl_bt_gatt_server_write_attribute_value(
-        gattdb_device_name, 0, sizeof(gattdb_device_name_len), (uint8_t *)device_name);
+        gattdb_device_name, 0, strlen(device_name), (uint8_t *)device_name);
       app_assert_status(sc);
 
       // Create an advertising set.
