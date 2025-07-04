@@ -158,6 +158,47 @@ void my_rx_callback(void *data) {
   app_proceed();
 }
 
+static sl_status_t start_advertising(void)
+{
+  sl_status_t sc;
+
+  // Create an advertising set.
+  sc = sl_bt_advertiser_create_set(&advertising_set_handle);
+  app_assert_status(sc);
+
+  // Generate data for advertising
+  sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
+                                             sl_bt_advertiser_general_discoverable);
+  app_assert_status(sc);
+  // Set advertising interval to 100ms.
+  sc = sl_bt_advertiser_set_timing(
+    advertising_set_handle,
+    160,   // min. adv. interval (milliseconds * 1.6)
+    160,   // max. adv. interval (milliseconds * 1.6)
+    0,     // adv. duration
+    0);    // max. num. adv. events
+  app_assert_status(sc);
+  // Start  advertising and enable connections
+  sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
+                                     sl_bt_legacy_advertiser_connectable);
+  app_assert_status(sc);
+
+
+  return sc;
+}
+
+static sl_status_t set_device_name(char *name)
+{
+
+  sl_status_t sc;
+
+  sc = sl_bt_gatt_server_write_attribute_value(
+    gattdb_device_name, 0, strlen(name), (uint8_t *)name);
+  app_assert_status(sc);
+
+  return sc;
+}
+
 // Application Init.
 void app_init(void)
 {
@@ -170,6 +211,9 @@ void app_init(void)
                                                                my_rx_callback,
                                                                NULL);
   app_assert_status(status);
+
+  //sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM1);// Never go to sleep mode
+
 }
 
 // Application Process Action.
@@ -181,6 +225,18 @@ void app_process_action(void)
     // This is will run each time app_proceed() is called.                     //
     // Do not call blocking functions from here!                               //
     /////////////////////////////////////////////////////////////////////////////
+
+    // TODO data available, check for management frames
+
+    // Parse : data from the main MCU
+
+    // - Set Device name / MAC Address
+    // - Start / Stop BLE
+    // - Start / Stop Advertising
+    // - Get / Device
+
+    //parse_main_mcu_command(command)
+
 
     if (STATE_SPP_MODE == main_state) {
       send_spp_data();
@@ -218,33 +274,20 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
               address.addr[5], address.addr[4], address.addr[3],
               address.addr[2], address.addr[1], address.addr[0]);
 
+
+      // TODO Place this code where we receive the final ID
+
+      // Apply received device name by driver or keypad to characteristic
       // Set the device name to "SPP_xxxx" where xxxx is the last 4 digits of
       // the device MAC address.
       char device_name[9];
       sprintf(device_name, "SPP_%02X%02X", address.addr[1], address.addr[0]);
 
-      sc = sl_bt_gatt_server_write_attribute_value(
-        gattdb_device_name, 0, strlen(device_name), (uint8_t *)device_name);
+      sc = set_device_name(device_name);
       app_assert_status(sc);
 
-      // Create an advertising set.
-      sc = sl_bt_advertiser_create_set(&advertising_set_handle);
-      app_assert_status(sc);
-      // Generate data for advertising
-      sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
-                                                 sl_bt_advertiser_general_discoverable);
-      app_assert_status(sc);
-      // Set advertising interval to 100ms.
-      sc = sl_bt_advertiser_set_timing(
-        advertising_set_handle,
-        160,   // min. adv. interval (milliseconds * 1.6)
-        160,   // max. adv. interval (milliseconds * 1.6)
-        0,     // adv. duration
-        0);    // max. num. adv. events
-      app_assert_status(sc);
-      // Start  advertising and enable connections
-      sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
-                                         sl_bt_legacy_advertiser_connectable);
+      // Wait for Push Button / Event
+      sc = start_advertising();
       app_assert_status(sc);
 
       break;
