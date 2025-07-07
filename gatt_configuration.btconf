@@ -78,8 +78,17 @@
   <!--SPP Service-->
   <service advertise="true" name="SPP Service" requirement="mandatory" sourceId="" type="primary" uuid="4880c12c-fdcb-4077-8920-a450d7f9b907">
 
-    <!--SPP Data-->
-    <characteristic const="false" id="spp_data" name="SPP Data" sourceId="" uuid="fec26ec4-6d71-4442-9f81-55bc21d658d6">
+    <!--SPP Data Read-->
+    <characteristic const="false" id="spp_data_r" name="SPP Data Read" sourceId="" uuid="49a023f5-5d5a-46b0-8044-3c088cc5e47e">
+      <value length="20" type="hex" variable_length="true">00</value>
+      <properties>
+        <write_no_response authenticated="false" bonded="false" encrypted="false"/>
+        <notify authenticated="false" bonded="false" encrypted="false"/>
+      </properties>
+    </characteristic>
+
+    <!--SPP Data Write-->
+    <characteristic const="false" id="spp_data_w" name="SPP Data Write" sourceId="" uuid="49a023f8-5d5a-46b0-8044-3c088cc5e47e">
       <value length="20" type="hex" variable_length="true">00</value>
       <properties>
         <write_no_response authenticated="false" bonded="false" encrypted="false"/>
