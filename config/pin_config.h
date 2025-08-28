@@ -94,36 +94,28 @@
 // [TIMER4]$
 
 // $[USART0]
-// USART0 CTS on PA09
+// USART0 CTS on PA00
 #ifndef USART0_CTS_PORT                         
 #define USART0_CTS_PORT                          SL_GPIO_PORT_A
 #endif
 #ifndef USART0_CTS_PIN                          
-#define USART0_CTS_PIN                           9
+#define USART0_CTS_PIN                           0
 #endif
 
-// USART0 RTS on PA08
-#ifndef USART0_RTS_PORT                         
-#define USART0_RTS_PORT                          SL_GPIO_PORT_A
-#endif
-#ifndef USART0_RTS_PIN                          
-#define USART0_RTS_PIN                           8
-#endif
-
-// USART0 RX on PD05
+// USART0 RX on PA00
 #ifndef USART0_RX_PORT                          
-#define USART0_RX_PORT                           SL_GPIO_PORT_D
+#define USART0_RX_PORT                           SL_GPIO_PORT_A
 #endif
 #ifndef USART0_RX_PIN                           
-#define USART0_RX_PIN                            5
+#define USART0_RX_PIN                            0
 #endif
 
-// USART0 TX on PD04
+// USART0 TX on PA00
 #ifndef USART0_TX_PORT                          
-#define USART0_TX_PORT                           SL_GPIO_PORT_D
+#define USART0_TX_PORT                           SL_GPIO_PORT_A
 #endif
 #ifndef USART0_TX_PIN                           
-#define USART0_TX_PIN                            4
+#define USART0_TX_PIN                            0
 #endif
 
 // [USART0]$
@@ -168,20 +160,20 @@
 // [EUSART0]$
 
 // $[PTI]
-// PTI DFRAME on PC07
+// PTI DFRAME on PC05
 #ifndef PTI_DFRAME_PORT                         
 #define PTI_DFRAME_PORT                          SL_GPIO_PORT_C
 #endif
 #ifndef PTI_DFRAME_PIN                          
-#define PTI_DFRAME_PIN                           7
+#define PTI_DFRAME_PIN                           5
 #endif
 
-// PTI DOUT on PC06
+// PTI DOUT on PC04
 #ifndef PTI_DOUT_PORT                           
 #define PTI_DOUT_PORT                            SL_GPIO_PORT_C
 #endif
 #ifndef PTI_DOUT_PIN                            
-#define PTI_DOUT_PIN                             6
+#define PTI_DOUT_PIN                             4
 #endif
 
 // [PTI]$
@@ -200,4 +192,45 @@
 // [CUSTOM_PIN_NAME]$
 
 #endif // PIN_CONFIG_H
+
+// $[USART1]
+// USART1 CTS on PA08
+#ifndef USART1_CTS_PORT                         
+#define USART1_CTS_PORT                          SL_GPIO_PORT_A
+#endif
+#ifndef USART1_CTS_PIN                          
+#define USART1_CTS_PIN                           8
+#endif
+
+// USART1 RTS on PA07
+#ifndef USART1_RTS_PORT                         
+#define USART1_RTS_PORT                          SL_GPIO_PORT_A
+#endif
+#ifndef USART1_RTS_PIN                          
+#define USART1_RTS_PIN                           7
+#endif
+
+// USART1 RX on PA06
+#ifndef USART1_RX_PORT                          
+#define USART1_RX_PORT                           SL_GPIO_PORT_A
+#endif
+#ifndef USART1_RX_PIN                           
+#define USART1_RX_PIN                            6
+#endif
+
+// USART1 TX on PA05
+#ifndef USART1_TX_PORT                          
+#define USART1_TX_PORT                           SL_GPIO_PORT_A
+#endif
+#ifndef USART1_TX_PIN                           
+#define USART1_TX_PIN                            5
+#endif
+
+// [USART1]$
+
+// $[PDM]
+// [PDM]$
+
+// $[EUART0]
+// [EUART0]$
 

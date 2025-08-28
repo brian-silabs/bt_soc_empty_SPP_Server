@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="ASCII"?>
 <model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
   <descriptors name="bt_soc_empty_SPP_Server">
-    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.sisdk:2025.6.0._-1208501473"/>
-    <properties key="universalConfig.relativeWorkspacePath" value="../bt_soc_empty_SPP_Server.slcw"/>
+    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.sisdk:2025.6.0._-818808777"/>
+    <properties key="universalConfig.relativeWorkspacePath" value="..\bt_soc_empty_SPP_Server.slcw"/>
     <properties key="universalConfig.generationDirectory" value=""/>
     <properties key="universalConfig.toolchainCompatibility" value="iar gcc"/>
     <properties key="projectCommon.overwriteCopiedSources" value="false"/>
-    <properties key="projectCommon.boardIds" value="brd2703a:0.0.0.A02"/>
+    <properties key="projectCommon.boardIds" value="brd4108a:0.0.0"/>
     <properties key="projectCommon.kitId" value=""/>
-    <properties key="projectCommon.partId" value="mcu.arm.efr32.mg24.efr32mg24b210f1536im48"/>
+    <properties key="projectCommon.partId" value="mcu.arm.efr32.bg22.efr32bg22c224f512im40"/>
     <properties key="projectCommon.toolchainId" value="com.silabs.ss.tool.ide.arm.toolchain.gnu.cdt:12.2.1.20221205"/>
     <properties key="universalConfig.projectTypeIds" value="com.silabs.ss.framework.ide.project.core.cdtMbsProjectType"/>
     <properties key="projectCommon.importModeId" value="COPY"/>
     <properties key="universalConfig.compSelProjInstanceId" value="1751290861481"/>
   </descriptors>
-</model:MDescriptors>
+</model:MDescriptors>

@@ -11,59 +11,52 @@
     <folder name="platform">
       <folder name="Device">
         <folder name="SiliconLabs">
-          <folder name="EFR32MG24">
+          <folder name="EFR32BG22">
             <folder name="Source">
-              <file name="system_efr32mg24.c" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Source/system_efr32mg24.c"/>
-              <file name="startup_efr32mg24.c" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Source/startup_efr32mg24.c"/>
+              <file name="system_efr32bg22.c" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Source/system_efr32bg22.c"/>
+              <file name="startup_efr32bg22.c" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Source/startup_efr32bg22.c"/>
             </folder>
             <folder name="Include">
-              <file name="efr32mg24b210f1536im48.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24b210f1536im48.h"/>
-              <file name="efr32mg24_acmp.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_acmp.h"/>
-              <file name="efr32mg24_aes.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_aes.h"/>
-              <file name="efr32mg24_buram.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_buram.h"/>
-              <file name="efr32mg24_burtc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_burtc.h"/>
-              <file name="efr32mg24_cmu.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_cmu.h"/>
-              <file name="efr32mg24_dcdc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dcdc.h"/>
-              <file name="efr32mg24_devinfo.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_devinfo.h"/>
-              <file name="efr32mg24_dma_descriptor.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dma_descriptor.h"/>
-              <file name="efr32mg24_dpll.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_dpll.h"/>
-              <file name="efr32mg24_emu.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_emu.h"/>
-              <file name="efr32mg24_eusart.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_eusart.h"/>
-              <file name="efr32mg24_fsrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_fsrco.h"/>
-              <file name="efr32mg24_gpcrc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpcrc.h"/>
-              <file name="efr32mg24_gpio.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpio.h"/>
-              <file name="efr32mg24_gpio_port.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_gpio_port.h"/>
-              <file name="efr32mg24_hfrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_hfrco.h"/>
-              <file name="efr32mg24_hfxo.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_hfxo.h"/>
-              <file name="efr32mg24_i2c.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_i2c.h"/>
-              <file name="efr32mg24_iadc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_iadc.h"/>
-              <file name="efr32mg24_icache.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_icache.h"/>
-              <file name="efr32mg24_keyscan.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_keyscan.h"/>
-              <file name="efr32mg24_ldma.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldma.h"/>
-              <file name="efr32mg24_ldmaxbar.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldmaxbar.h"/>
-              <file name="efr32mg24_ldmaxbar_defines.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ldmaxbar_defines.h"/>
-              <file name="efr32mg24_letimer.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_letimer.h"/>
-              <file name="efr32mg24_lfrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_lfrco.h"/>
-              <file name="efr32mg24_lfxo.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_lfxo.h"/>
-              <file name="efr32mg24_mailbox.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mailbox.h"/>
-              <file name="efr32mg24_mpahbram.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mpahbram.h"/>
-              <file name="efr32mg24_msc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_msc.h"/>
-              <file name="efr32mg24_mvp.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_mvp.h"/>
-              <file name="efr32mg24_pcnt.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_pcnt.h"/>
-              <file name="efr32mg24_prs.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_prs.h"/>
-              <file name="efr32mg24_prs_signals.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_prs_signals.h"/>
-              <file name="efr32mg24_scratchpad.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_scratchpad.h"/>
-              <file name="efr32mg24_semailbox.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_semailbox.h"/>
-              <file name="efr32mg24_smu.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_smu.h"/>
-              <file name="efr32mg24_syscfg.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_syscfg.h"/>
-              <file name="efr32mg24_sysrtc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_sysrtc.h"/>
-              <file name="efr32mg24_timer.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_timer.h"/>
-              <file name="efr32mg24_ulfrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_ulfrco.h"/>
-              <file name="efr32mg24_usart.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_usart.h"/>
-              <file name="efr32mg24_vdac.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_vdac.h"/>
-              <file name="efr32mg24_wdog.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/efr32mg24_wdog.h"/>
-              <file name="em_device.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/em_device.h"/>
-              <file name="system_efr32mg24.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32MG24/Include/system_efr32mg24.h"/>
+              <file name="efr32bg22c224f512im40.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22c224f512im40.h"/>
+              <file name="efr32bg22_aes.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_aes.h"/>
+              <file name="efr32bg22_buram.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_buram.h"/>
+              <file name="efr32bg22_burtc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_burtc.h"/>
+              <file name="efr32bg22_cmu.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_cmu.h"/>
+              <file name="efr32bg22_cryptoacc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_cryptoacc.h"/>
+              <file name="efr32bg22_dcdc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_dcdc.h"/>
+              <file name="efr32bg22_devinfo.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_devinfo.h"/>
+              <file name="efr32bg22_dma_descriptor.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_dma_descriptor.h"/>
+              <file name="efr32bg22_dpll.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_dpll.h"/>
+              <file name="efr32bg22_emu.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_emu.h"/>
+              <file name="efr32bg22_eusart.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_eusart.h"/>
+              <file name="efr32bg22_fsrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_fsrco.h"/>
+              <file name="efr32bg22_gpcrc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_gpcrc.h"/>
+              <file name="efr32bg22_gpio.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_gpio.h"/>
+              <file name="efr32bg22_gpio_port.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_gpio_port.h"/>
+              <file name="efr32bg22_hfrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_hfrco.h"/>
+              <file name="efr32bg22_hfxo.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_hfxo.h"/>
+              <file name="efr32bg22_i2c.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_i2c.h"/>
+              <file name="efr32bg22_iadc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_iadc.h"/>
+              <file name="efr32bg22_icache.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_icache.h"/>
+              <file name="efr32bg22_ldma.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_ldma.h"/>
+              <file name="efr32bg22_ldmaxbar.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_ldmaxbar.h"/>
+              <file name="efr32bg22_ldmaxbar_defines.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_ldmaxbar_defines.h"/>
+              <file name="efr32bg22_letimer.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_letimer.h"/>
+              <file name="efr32bg22_lfrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_lfrco.h"/>
+              <file name="efr32bg22_lfxo.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_lfxo.h"/>
+              <file name="efr32bg22_msc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_msc.h"/>
+              <file name="efr32bg22_pdm.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_pdm.h"/>
+              <file name="efr32bg22_prs.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_prs.h"/>
+              <file name="efr32bg22_prs_signals.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_prs_signals.h"/>
+              <file name="efr32bg22_rtcc.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_rtcc.h"/>
+              <file name="efr32bg22_smu.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_smu.h"/>
+              <file name="efr32bg22_syscfg.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_syscfg.h"/>
+              <file name="efr32bg22_timer.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_timer.h"/>
+              <file name="efr32bg22_ulfrco.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_ulfrco.h"/>
+              <file name="efr32bg22_usart.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_usart.h"/>
+              <file name="efr32bg22_wdog.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/efr32bg22_wdog.h"/>
+              <file name="em_device.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/em_device.h"/>
+              <file name="system_efr32bg22.h" linked="false" uri="studio:/sdk/platform/Device/SiliconLabs/EFR32BG22/Include/system_efr32bg22.h"/>
             </folder>
           </folder>
         </folder>
@@ -143,10 +136,10 @@
             <file name="sl_device_peripheral_types.h" linked="false" uri="studio:/sdk/platform/service/device_manager/inc/sl_device_peripheral_types.h"/>
           </folder>
           <folder name="clocks">
-            <file name="sl_device_clock_efr32xg24.c" linked="false" uri="studio:/sdk/platform/service/device_manager/clocks/sl_device_clock_efr32xg24.c"/>
+            <file name="sl_device_clock_efr32xg22.c" linked="false" uri="studio:/sdk/platform/service/device_manager/clocks/sl_device_clock_efr32xg22.c"/>
           </folder>
           <folder name="devices">
-            <file name="sl_device_peripheral_hal_efr32xg24.c" linked="false" uri="studio:/sdk/platform/service/device_manager/devices/sl_device_peripheral_hal_efr32xg24.c"/>
+            <file name="sl_device_peripheral_hal_efr32xg22.c" linked="false" uri="studio:/sdk/platform/service/device_manager/devices/sl_device_peripheral_hal_efr32xg22.c"/>
           </folder>
         </folder>
         <folder name="device_init">
@@ -155,17 +148,6 @@
           </folder>
           <folder name="inc">
             <file name="sl_device_init_dcdc.h" linked="false" uri="studio:/sdk/platform/service/device_init/inc/sl_device_init_dcdc.h"/>
-          </folder>
-        </folder>
-        <folder name="hfxo_manager">
-          <folder name="src">
-            <file name="sl_hfxo_manager.c" linked="false" uri="studio:/sdk/platform/service/hfxo_manager/src/sl_hfxo_manager.c"/>
-            <file name="sl_hfxo_manager_hal_s2.c" linked="false" uri="studio:/sdk/platform/service/hfxo_manager/src/sl_hfxo_manager_hal_s2.c"/>
-            <file name="sli_hfxo_manager_internal.h" linked="false" uri="studio:/sdk/platform/service/hfxo_manager/src/sli_hfxo_manager_internal.h"/>
-          </folder>
-          <folder name="inc">
-            <file name="sl_hfxo_manager.h" linked="false" uri="studio:/sdk/platform/service/hfxo_manager/inc/sl_hfxo_manager.h"/>
-            <file name="sli_hfxo_manager.h" linked="false" uri="studio:/sdk/platform/service/hfxo_manager/inc/sli_hfxo_manager.h"/>
           </folder>
         </folder>
         <folder name="interrupt_manager">
@@ -265,7 +247,8 @@
         <folder name="sleeptimer">
           <folder name="src">
             <file name="sl_sleeptimer.c" linked="false" uri="studio:/sdk/platform/service/sleeptimer/src/sl_sleeptimer.c"/>
-            <file name="sl_sleeptimer_hal_sysrtc.c" linked="false" uri="studio:/sdk/platform/service/sleeptimer/src/sl_sleeptimer_hal_sysrtc.c"/>
+            <file name="sl_sleeptimer_hal_rtcc.c" linked="false" uri="studio:/sdk/platform/service/sleeptimer/src/sl_sleeptimer_hal_rtcc.c"/>
+            <file name="sl_sleeptimer_hal_prortc.c" linked="false" uri="studio:/sdk/platform/service/sleeptimer/src/sl_sleeptimer_hal_prortc.c"/>
             <file name="sl_sleeptimer_hal_burtc.c" linked="false" uri="studio:/sdk/platform/service/sleeptimer/src/sl_sleeptimer_hal_burtc.c"/>
             <file name="sl_sleeptimer_hal_timer.c" linked="false" uri="studio:/sdk/platform/service/sleeptimer/src/sl_sleeptimer_hal_timer.c"/>
             <file name="sli_sleeptimer_hal.h" linked="false" uri="studio:/sdk/platform/service/sleeptimer/src/sli_sleeptimer_hal.h"/>
@@ -367,9 +350,11 @@
           <file name="em_cmu.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_cmu.c"/>
           <file name="em_emu.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_emu.c"/>
           <file name="em_gpio.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_gpio.c"/>
+          <file name="em_iadc.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_iadc.c"/>
           <file name="em_ldma.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_ldma.c"/>
           <file name="em_msc.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_msc.c"/>
           <file name="em_prs.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_prs.c"/>
+          <file name="em_rtcc.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_rtcc.c"/>
           <file name="em_system.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_system.c"/>
           <file name="em_timer.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_timer.c"/>
           <file name="em_usart.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_usart.c"/>
@@ -389,10 +374,12 @@
           <file name="em_core_generic.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_core_generic.h"/>
           <file name="em_emu.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_emu.h"/>
           <file name="em_gpio.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_gpio.h"/>
+          <file name="em_iadc.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_iadc.h"/>
           <file name="em_ldma.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_ldma.h"/>
           <file name="em_msc.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_msc.h"/>
           <file name="em_msc_compat.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_msc_compat.h"/>
           <file name="em_prs.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_prs.h"/>
+          <file name="em_rtcc.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_rtcc.h"/>
           <file name="em_syscfg.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_syscfg.h"/>
           <file name="em_system.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_system.h"/>
           <file name="em_system_generic.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_system_generic.h"/>
@@ -405,16 +392,11 @@
           <file name="sl_hal_bus.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_bus.h"/>
           <file name="sl_hal_gpio.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_gpio.h"/>
           <file name="sl_hal_syscfg.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_syscfg.h"/>
-          <file name="sl_hal_sysrtc.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_sysrtc.h"/>
-          <file name="sl_hal_sysrtc_compat.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_sysrtc_compat.h"/>
-          <file name="peripheral_sysrtc.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/peripheral_sysrtc.h"/>
-          <file name="peripheral_sysrtc_compat.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/peripheral_sysrtc_compat.h"/>
           <file name="sl_hal_system.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_system.h"/>
           <file name="sl_hal_system_generic.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_system_generic.h"/>
         </folder>
         <folder name="src">
           <file name="sl_hal_gpio.c" linked="false" uri="studio:/sdk/platform/peripheral/src/sl_hal_gpio.c"/>
-          <file name="sl_hal_sysrtc.c" linked="false" uri="studio:/sdk/platform/peripheral/src/sl_hal_sysrtc.c"/>
           <file name="sl_hal_system.c" linked="false" uri="studio:/sdk/platform/peripheral/src/sl_hal_system.c"/>
         </folder>
       </folder>
@@ -428,6 +410,11 @@
             </folder>
             <folder name="src">
               <file name="sl_mbedtls.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/sl_mbedtls.c"/>
+              <file name="cryptoacc_aes.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/cryptoacc_aes.c"/>
+              <file name="mbedtls_ccm.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/mbedtls_ccm.c"/>
+              <file name="mbedtls_cmac.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/mbedtls_cmac.c"/>
+              <file name="mbedtls_ecdsa_ecdh.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/mbedtls_ecdsa_ecdh.c"/>
+              <file name="cryptoacc_gcm.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/cryptoacc_gcm.c"/>
               <file name="sl_psa_crypto.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/sl_psa_crypto.c"/>
               <file name="sli_psa_crypto.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/src/sli_psa_crypto.c"/>
             </folder>
@@ -436,12 +423,10 @@
               <file name="aes_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/aes_alt.h"/>
               <file name="ccm_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/ccm_alt.h"/>
               <file name="cmac_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/cmac_alt.h"/>
-              <file name="se_management.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/se_management.h"/>
               <file name="sha1_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/sha1_alt.h"/>
               <file name="sha256_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/sha256_alt.h"/>
               <file name="sha512_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/sha512_alt.h"/>
               <file name="gcm_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/gcm_alt.h"/>
-              <file name="ecjpake_alt.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/ecjpake_alt.h"/>
               <file name="sl_psa_crypto.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/sl_psa_crypto.h"/>
               <file name="sli_psa_crypto.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/sli_psa_crypto.h"/>
               <file name="sl_psa_values.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_mbedtls_support/inc/sl_psa_values.h"/>
@@ -454,22 +439,15 @@
               <file name="sli_psa_driver_common.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_psa_driver_common.c"/>
               <file name="sli_se_version_dependencies.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_version_dependencies.c"/>
               <file name="sl_psa_its_nvm3.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sl_psa_its_nvm3.c"/>
-              <file name="sli_se_driver_builtin_keys.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_driver_builtin_keys.c"/>
-              <file name="sli_se_driver_key_management.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_driver_key_management.c"/>
-              <file name="sli_se_driver_key_derivation.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_driver_key_derivation.c"/>
-              <file name="sli_se_driver_aead.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_driver_aead.c"/>
-              <file name="sli_se_driver_mac.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_driver_mac.c"/>
-              <file name="sli_se_driver_signature.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_driver_signature.c"/>
-              <file name="sli_se_driver_cipher.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_driver_cipher.c"/>
-              <file name="sli_se_transparent_driver_cipher.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_transparent_driver_cipher.c"/>
-              <file name="sli_se_transparent_driver_hash.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_transparent_driver_hash.c"/>
-              <file name="sli_se_transparent_driver_aead.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_transparent_driver_aead.c"/>
-              <file name="sli_se_transparent_driver_mac.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_transparent_driver_mac.c"/>
-              <file name="sli_se_transparent_key_derivation.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_transparent_key_derivation.c"/>
-              <file name="sli_se_opaque_driver_mac.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_opaque_driver_mac.c"/>
-              <file name="sli_se_opaque_key_derivation.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_opaque_key_derivation.c"/>
-              <file name="sli_se_opaque_driver_cipher.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_opaque_driver_cipher.c"/>
-              <file name="sli_se_opaque_driver_aead.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_se_opaque_driver_aead.c"/>
+              <file name="cryptoacc_management.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/cryptoacc_management.c"/>
+              <file name="sli_cryptoacc_driver_trng.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_driver_trng.c"/>
+              <file name="sli_cryptoacc_transparent_driver_hash.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_hash.c"/>
+              <file name="sli_cryptoacc_transparent_driver_cipher.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_cipher.c"/>
+              <file name="sli_cryptoacc_transparent_driver_aead.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_aead.c"/>
+              <file name="sli_cryptoacc_transparent_driver_mac.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_mac.c"/>
+              <file name="sli_cryptoacc_transparent_driver_key_derivation.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_derivation.c"/>
+              <file name="sli_cryptoacc_transparent_driver_key_management.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_key_management.c"/>
+              <file name="sli_cryptoacc_transparent_driver_signature.c" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/src/sli_cryptoacc_transparent_driver_signature.c"/>
             </folder>
             <folder name="inc">
               <folder name="psa">
@@ -480,15 +458,10 @@
               <file name="sli_psa_driver_common.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_psa_driver_common.h"/>
               <file name="sli_se_version_dependencies.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_version_dependencies.h"/>
               <file name="sli_psa_driver_features.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_psa_driver_features.h"/>
-              <file name="sli_se_driver_aead.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_driver_aead.h"/>
-              <file name="sli_se_driver_cipher.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_driver_cipher.h"/>
-              <file name="sli_se_driver_key_derivation.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_driver_key_derivation.h"/>
-              <file name="sli_se_driver_key_management.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_driver_key_management.h"/>
-              <file name="sli_se_driver_mac.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_driver_mac.h"/>
-              <file name="sli_se_opaque_functions.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_opaque_functions.h"/>
-              <file name="sli_se_opaque_types.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_opaque_types.h"/>
-              <file name="sli_se_transparent_functions.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_transparent_functions.h"/>
-              <file name="sli_se_transparent_types.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_se_transparent_types.h"/>
+              <file name="cryptoacc_management.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/cryptoacc_management.h"/>
+              <file name="sli_cryptoacc_driver_trng.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_driver_trng.h"/>
+              <file name="sli_cryptoacc_transparent_functions.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_functions.h"/>
+              <file name="sli_cryptoacc_transparent_types.h" linked="false" uri="studio:/sdk/platform/security/sl_component/sl_psa_driver/inc/sli_cryptoacc_transparent_types.h"/>
             </folder>
           </folder>
           <folder name="se_manager">
@@ -595,37 +568,13 @@
           </folder>
           <folder name="autogen">
             <folder name="librail_release">
-              <file name="librail_efr32xg24_gcc_release.a" linked="false" uri="studio:/sdk/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg24_gcc_release.a"/>
+              <file name="librail_efr32xg22_gcc_release.a" linked="false" uri="studio:/sdk/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg22_gcc_release.a"/>
             </folder>
           </folder>
           <folder name="plugin">
-            <folder name="rail_util_built_in_phys">
-              <folder name="efr32xg24">
-                <file name="sl_rail_ble_config_38M4Hz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ble_config_38M4Hz.c"/>
-                <file name="sl_rail_ieee802154_config_38M4Hz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ieee802154_config_38M4Hz.c"/>
-                <file name="sl_rail_rfsense_ook_config_38M4Hz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_rfsense_ook_config_38M4Hz.c"/>
-                <file name="sl_rail_ble_config_39MHz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ble_config_39MHz.c"/>
-                <file name="sl_rail_ieee802154_config_39MHz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ieee802154_config_39MHz.c"/>
-                <file name="sl_rail_rfsense_ook_config_39MHz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_rfsense_ook_config_39MHz.c"/>
-                <file name="sl_rail_ble_config_40MHz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ble_config_40MHz.c"/>
-                <file name="sl_rail_ieee802154_config_40MHz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ieee802154_config_40MHz.c"/>
-                <file name="sl_rail_rfsense_ook_config_40MHz.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_rfsense_ook_config_40MHz.c"/>
-                <file name="sl_rail_ble_config_38M4Hz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ble_config_38M4Hz.h"/>
-                <file name="sl_rail_ieee802154_config_38M4Hz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ieee802154_config_38M4Hz.h"/>
-                <file name="sl_rail_rfsense_ook_config_38M4Hz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_rfsense_ook_config_38M4Hz.h"/>
-                <file name="sl_rail_ble_config_39MHz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ble_config_39MHz.h"/>
-                <file name="sl_rail_ieee802154_config_39MHz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ieee802154_config_39MHz.h"/>
-                <file name="sl_rail_rfsense_ook_config_39MHz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_rfsense_ook_config_39MHz.h"/>
-                <file name="sl_rail_ble_config_40MHz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ble_config_40MHz.h"/>
-                <file name="sl_rail_ieee802154_config_40MHz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_ieee802154_config_40MHz.h"/>
-                <file name="sl_rail_rfsense_ook_config_40MHz.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24/sl_rail_rfsense_ook_config_40MHz.h"/>
-              </folder>
-              <file name="sl_rail_phy_overrides.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_built_in_phys/sl_rail_phy_overrides.c"/>
-            </folder>
             <folder name="pa-conversions">
-              <folder name="efr32xg24">
-                <file name="sl_rail_util_pa_curves_10dbm.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/pa-conversions/efr32xg24/sl_rail_util_pa_curves_10dbm.h"/>
-                <file name="sl_rail_util_pa_curves_20dbm.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/pa-conversions/efr32xg24/sl_rail_util_pa_curves_20dbm.h"/>
+              <folder name="efr32xg22">
+                <file name="sl_rail_util_pa_curves.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/pa-conversions/efr32xg22/sl_rail_util_pa_curves.h"/>
               </folder>
               <file name="pa_conversions_efr32.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/pa-conversions/pa_conversions_efr32.c"/>
               <file name="pa_curves_efr32.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/pa-conversions/pa_curves_efr32.c"/>
@@ -642,9 +591,6 @@
             <folder name="rail_util_pti">
               <file name="sl_rail_util_pti.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_pti/sl_rail_util_pti.c"/>
               <file name="sl_rail_util_pti.h" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_pti/sl_rail_util_pti.h"/>
-            </folder>
-            <folder name="rail_util_sequencer">
-              <file name="sl_rail_util_sequencer.c" linked="false" uri="studio:/sdk/platform/radio/rail_lib/plugin/rail_util_sequencer/sl_rail_util_sequencer.c"/>
             </folder>
           </folder>
         </folder>
@@ -763,9 +709,9 @@
             </folder>
             <folder name="build">
               <folder name="gcc">
-                <folder name="xg24">
+                <folder name="xg22">
                   <folder name="release">
-                    <file name="liblinklayer.a" linked="false" uri="studio:/sdk/protocol/bluetooth/bgstack/ll/build/gcc/xg24/release/liblinklayer.a"/>
+                    <file name="liblinklayer.a" linked="false" uri="studio:/sdk/protocol/bluetooth/bgstack/ll/build/gcc/xg22/release/liblinklayer.a"/>
                   </folder>
                 </folder>
               </folder>
@@ -864,6 +810,59 @@
     </folder>
     <folder name="util">
       <folder name="third_party">
+        <folder name="crypto_ip">
+          <folder name="libcryptosoc">
+            <folder name="src">
+              <file name="ba414ep_config.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/ba414ep_config.c"/>
+              <file name="ba431_config.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/ba431_config.c"/>
+              <file name="cryptodma_internal.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/cryptodma_internal.c"/>
+              <file name="cryptolib_types.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/cryptolib_types.c"/>
+              <file name="sx_aes.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_aes.c"/>
+              <file name="sx_blk_cipher.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_blk_cipher.c"/>
+              <file name="sx_dh_alg.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_dh_alg.c"/>
+              <file name="sx_ecc_curves.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_ecc_curves.c"/>
+              <file name="sx_ecc_keygen_alg.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_ecc_keygen_alg.c"/>
+              <file name="sx_ecdsa_alg.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_ecdsa_alg.c"/>
+              <file name="sx_hash.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_hash.c"/>
+              <file name="sx_math.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_math.c"/>
+              <file name="sx_memcmp.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_memcmp.c"/>
+              <file name="sx_memcpy.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_memcpy.c"/>
+              <file name="sx_primitives.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_primitives.c"/>
+              <file name="sx_rng.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_rng.c"/>
+              <file name="sx_trng.c" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_trng.c"/>
+              <file name="ba411e_config.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/ba411e_config.h"/>
+              <file name="ba413_config.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/ba413_config.h"/>
+              <file name="ba414ep_config.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/ba414ep_config.h"/>
+              <file name="ba431_config.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/ba431_config.h"/>
+              <file name="cryptodma_internal.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/cryptodma_internal.h"/>
+              <file name="padding.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/padding.h"/>
+              <file name="sx_blk_cipher.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sx_blk_cipher.h"/>
+              <file name="sxregs.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/src/sxregs.h"/>
+            </folder>
+            <folder name="include">
+              <file name="compiler_extentions.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/compiler_extentions.h"/>
+              <file name="cryptolib_def.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/cryptolib_def.h"/>
+              <file name="cryptolib_types.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/cryptolib_types.h"/>
+              <file name="sx_aes.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_aes.h"/>
+              <file name="sx_blk_cipher_common.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_blk_cipher_common.h"/>
+              <file name="sx_dh_alg.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_dh_alg.h"/>
+              <file name="sx_dma.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_dma.h"/>
+              <file name="sx_ecc_curves.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_ecc_curves.h"/>
+              <file name="sx_ecc_keygen_alg.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_ecc_keygen_alg.h"/>
+              <file name="sx_ecdsa_alg.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_ecdsa_alg.h"/>
+              <file name="sx_errors.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_errors.h"/>
+              <file name="sx_hash.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_hash.h"/>
+              <file name="sx_hw_cfg.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_hw_cfg.h"/>
+              <file name="sx_math.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_math.h"/>
+              <file name="sx_memcmp.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_memcmp.h"/>
+              <file name="sx_memcpy.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_memcpy.h"/>
+              <file name="sx_primitives.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_primitives.h"/>
+              <file name="sx_rng.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_rng.h"/>
+              <file name="sx_trng.h" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/include/sx_trng.h"/>
+            </folder>
+            <file name="LICENSE-Secure-IC.txt" linked="false" uri="studio:/sdk/util/third_party/crypto_ip/libcryptosoc/LICENSE-Secure-IC.txt"/>
+          </folder>
+        </folder>
         <folder name="mbedtls">
           <folder name="library">
             <file name="constant_time.c" linked="false" uri="studio:/sdk/util/third_party/mbedtls/library/constant_time.c"/>
@@ -1065,8 +1064,9 @@
   <excludedPath>image/readme_img3.png</excludedPath>
   <excludedPath>image/readme_img4.png</excludedPath>
   <excludedPath>simplicity_sdk_2025.6.0/protocol/bluetooth/api/sl_bt.xapi</excludedPath>
+  <excludedPath>simplicity_sdk_2025.6.0/util/third_party/crypto_ip/libcryptosoc/LICENSE-Secure-IC.txt</excludedPath>
   <includePath uri="studio:/project/"/>
-  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32MG24/Include"/>
+  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/Device/SiliconLabs/EFR32BG22/Include"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/app/common/util/app_assert"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/app/common/util/app_log"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/app/common/util/app_timer"/>
@@ -1093,12 +1093,13 @@
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/app/bluetooth/common/gatt_service_device_information_override"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/driver/gpio/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/peripheral/inc"/>
-  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/service/hfxo_manager/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/app/bluetooth/common/in_place_ota_dfu"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/service/interrupt_manager/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/service/interrupt_manager/src"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/service/interrupt_manager/inc/arm"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/service/iostream/inc"/>
+  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/util/third_party/crypto_ip/libcryptosoc/include"/>
+  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/util/third_party/crypto_ip/libcryptosoc/src"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/security/sl_component/sl_mbedtls_support/config"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/security/sl_component/sl_mbedtls_support/config/preset"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/security/sl_component/sl_mbedtls_support/inc"/>
@@ -1119,9 +1120,8 @@
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/protocol/zwave"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/chip/efr32/efr32xg2x"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/protocol/sidewalk"/>
-  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/plugin/rail_util_built_in_phys/efr32xg24"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/plugin/pa-conversions"/>
-  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/plugin/pa-conversions/efr32xg24"/>
+  <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/plugin/pa-conversions/efr32xg22"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/plugin/rail_util_power_manager_init"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/plugin/rail_util_pti"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/security/sl_component/se_manager/inc"/>
@@ -1132,16 +1132,16 @@
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/security/sl_component/sl_protocol_crypto/src"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/security/sl_component/sli_psec_osal/inc"/>
   <includePath uri="studio:/project/simplicity_sdk_2025.6.0/platform/service/udelay/inc"/>
-  <macroDefinition name="EFR32MG24B210F1536IM48"/>
+  <macroDefinition name="EFR32BG22C224F512IM40"/>
   <macroDefinition name="SL_CODE_COMPONENT_SYSTEM" value="system"/>
   <macroDefinition name="SL_APP_PROPERTIES"/>
   <macroDefinition name="BOOTLOADER_APPLOADER" value="1"/>
   <macroDefinition name="HARDWARE_BOARD_DEFAULT_RF_BAND_2400"/>
   <macroDefinition name="HARDWARE_BOARD_SUPPORTS_1_RF_BAND"/>
   <macroDefinition name="HARDWARE_BOARD_SUPPORTS_RF_BAND_2400"/>
-  <macroDefinition name="HFXO_FREQ" value="39000000"/>
-  <macroDefinition name="SL_BOARD_NAME" value="&quot;BRD2703A&quot;"/>
-  <macroDefinition name="SL_BOARD_REV" value="&quot;A02&quot;"/>
+  <macroDefinition name="HFXO_FREQ" value="38400000"/>
+  <macroDefinition name="SL_BOARD_NAME" value="&quot;BRD4108A&quot;"/>
+  <macroDefinition name="SL_BOARD_REV" value="&quot;A03&quot;"/>
   <macroDefinition name="SL_CODE_COMPONENT_CLOCK_MANAGER" value="clock_manager"/>
   <macroDefinition name="SL_COMPONENT_CATALOG_PRESENT"/>
   <macroDefinition name="SL_CODE_COMPONENT_DEVICE_PERIPHERAL" value="device_peripheral"/>
@@ -1149,7 +1149,6 @@
   <macroDefinition name="SL_CODE_COMPONENT_GPIO" value="gpio"/>
   <macroDefinition name="SL_CODE_COMPONENT_HAL_COMMON" value="hal_common"/>
   <macroDefinition name="SL_CODE_COMPONENT_HAL_GPIO" value="hal_gpio"/>
-  <macroDefinition name="SL_CODE_COMPONENT_HAL_SYSRTC" value="hal_sysrtc"/>
   <macroDefinition name="SL_CODE_COMPONENT_INTERRUPT_MANAGER" value="interrupt_manager"/>
   <macroDefinition name="CMSIS_NVIC_VIRTUAL"/>
   <macroDefinition name="CMSIS_NVIC_VIRTUAL_HEADER_FILE" value="&quot;cmsis_nvic_virtual.h&quot;"/>
@@ -1167,7 +1166,7 @@
   <macroDefinition name="SL_CODE_COMPONENT_SLI_PROTOCOL_CRYPTO" value="sli_protocol_crypto"/>
   <macroDefinition name="SL_CODE_COMPONENT_PSEC_OSAL" value="psec_osal"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/bgcommon/lib/build/gcc/cortex-m33/bgcommon/release/libbgcommon.a"/>
-  <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/bgstack/ll/build/gcc/xg24/release/liblinklayer.a"/>
+  <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/bgstack/ll/build/gcc/xg22/release/liblinklayer.a"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/build/gcc/cortex-m33/ble_host/bgstack/release/libbondingdb.a"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/build/gcc/cortex-m33/ble_host/ble_bgapi/release/libble_bgapi_gatt_client.a"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/build/gcc/cortex-m33/ble_host/ble_bgapi/release/libble_bgapi_gatt_server.a"/>
@@ -1181,7 +1180,7 @@
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/build/gcc/cortex-m33/ble_host/hal/release/libble_host_hal_series2.a"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/build/gcc/cortex-m33/ble_host/hci/release/libble_host_hci.a"/>
   <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/protocol/bluetooth/build/gcc/cortex-m33/ble_host/system/release/libble_host_system.a"/>
-  <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg24_gcc_release.a"/>
+  <libraryFile uri="studio:/project/simplicity_sdk_2025.6.0/platform/radio/rail_lib/autogen/librail_release/librail_efr32xg22_gcc_release.a"/>
   <libraryFile name="gcc"/>
   <libraryFile name="c"/>
   <libraryFile name="m"/>
@@ -1245,7 +1244,7 @@
   <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.clibs" value="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.nanospec"/>
   <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.c.linker.map" value="true"/>
   <toolOption toolId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.base" optionId="com.silabs.ide.si32.gcc.cdt.managedbuild.tool.gnu.cpp.linker.map" value="true"/>
-  <toolOption toolId="studio.ide.project" optionId="device_opn" value="efr32mg24b210f1536im48"/>
+  <toolOption toolId="studio.ide.project" optionId="device_opn" value="efr32bg22c224f512im40"/>
   <toolOption toolId="makefile.arm.gcc.linker" optionId="misc">
     <toolListOption value="-Wl,--wrap=_free_r -Wl,--wrap=_malloc_r -Wl,--wrap=_calloc_r -Wl,--wrap=_realloc_r"/>
     <toolListOption value="-fno-lto"/>

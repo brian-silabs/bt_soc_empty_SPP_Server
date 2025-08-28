@@ -2,7 +2,6 @@
 
 #include "sl_board_init.h"
 #include "sl_clock_manager.h"
-#include "sl_hfxo_manager.h"
 #include "pa_conversions_efr32.h"
 #include "sl_rail_util_power_manager_init.h"
 #include "sl_rail_util_pti.h"
@@ -47,7 +46,6 @@ void sl_platform_init(void)
 {
   sl_board_preinit();
   sl_clock_manager_runtime_init();
-  sl_hfxo_manager_init_hardware();
   sl_board_init();
   bootloader_init();
   nvm3_initDefault();
@@ -68,7 +66,6 @@ void sl_driver_init(void)
 void sl_service_init(void)
 {
   sl_board_configure_vcom();
-  sl_hfxo_manager_init();
   sl_iostream_stdlib_disable_buffering();
   sl_mbedtls_init();
   psa_crypto_init();

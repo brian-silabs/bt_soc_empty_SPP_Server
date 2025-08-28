@@ -26,7 +26,7 @@ include:
 sdk: {id: simplicity_sdk, version: 2025.6.0}
 toolchain_settings: []
 component:
-- {id: EFR32MG24B210F1536IM48}
+- {id: EFR32BG22C224F512IM40}
 - {id: app_assert}
 - {id: app_log}
 - {id: app_os_helper}
@@ -39,7 +39,7 @@ component:
 - {id: bluetooth_feature_sm}
 - {id: bluetooth_feature_system}
 - {id: bluetooth_stack}
-- {id: brd2703a_a02}
+- {id: brd4108a}
 - {id: clock_manager}
 - {id: device_init}
 - {id: gatt_configuration}

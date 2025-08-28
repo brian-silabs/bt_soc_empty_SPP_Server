@@ -61,7 +61,7 @@
 // <usartHwFlowControlCtsAndRts=> CTS/RTS
 // <uartFlowControlSoftware=> Software Flow control (XON/XOFF)
 // <i> Default: usartHwFlowControlNone
-#define SL_IOSTREAM_USART_VCOM_FLOW_CONTROL_TYPE     usartHwFlowControlNone
+#define SL_IOSTREAM_USART_VCOM_FLOW_CONTROL_TYPE     usartHwFlowControlCtsAndRts
 
 // <o SL_IOSTREAM_USART_VCOM_RX_BUFFER_SIZE> Receive buffer size
 // <i> Default: 32
@@ -85,42 +85,42 @@
 // <usart signal=TX,RX,(CTS),(RTS)> SL_IOSTREAM_USART_VCOM
 // $[USART_SL_IOSTREAM_USART_VCOM]
 #ifndef SL_IOSTREAM_USART_VCOM_PERIPHERAL       
-#define SL_IOSTREAM_USART_VCOM_PERIPHERAL        USART0
+#define SL_IOSTREAM_USART_VCOM_PERIPHERAL        USART1
 #endif
 #ifndef SL_IOSTREAM_USART_VCOM_PERIPHERAL_NO    
-#define SL_IOSTREAM_USART_VCOM_PERIPHERAL_NO     0
+#define SL_IOSTREAM_USART_VCOM_PERIPHERAL_NO     1
 #endif
 
-// USART0 TX on PD04
+// USART1 TX on PA05
 #ifndef SL_IOSTREAM_USART_VCOM_TX_PORT          
-#define SL_IOSTREAM_USART_VCOM_TX_PORT           SL_GPIO_PORT_D
+#define SL_IOSTREAM_USART_VCOM_TX_PORT           SL_GPIO_PORT_A
 #endif
 #ifndef SL_IOSTREAM_USART_VCOM_TX_PIN           
-#define SL_IOSTREAM_USART_VCOM_TX_PIN            4
+#define SL_IOSTREAM_USART_VCOM_TX_PIN            5
 #endif
 
-// USART0 RX on PD05
+// USART1 RX on PA06
 #ifndef SL_IOSTREAM_USART_VCOM_RX_PORT          
-#define SL_IOSTREAM_USART_VCOM_RX_PORT           SL_GPIO_PORT_D
+#define SL_IOSTREAM_USART_VCOM_RX_PORT           SL_GPIO_PORT_A
 #endif
 #ifndef SL_IOSTREAM_USART_VCOM_RX_PIN           
-#define SL_IOSTREAM_USART_VCOM_RX_PIN            5
+#define SL_IOSTREAM_USART_VCOM_RX_PIN            6
 #endif
 
-// USART0 CTS on PA09
+// USART1 CTS on PA08
 #ifndef SL_IOSTREAM_USART_VCOM_CTS_PORT         
 #define SL_IOSTREAM_USART_VCOM_CTS_PORT          SL_GPIO_PORT_A
 #endif
 #ifndef SL_IOSTREAM_USART_VCOM_CTS_PIN          
-#define SL_IOSTREAM_USART_VCOM_CTS_PIN           9
+#define SL_IOSTREAM_USART_VCOM_CTS_PIN           8
 #endif
 
-// USART0 RTS on PA08
+// USART1 RTS on PA07
 #ifndef SL_IOSTREAM_USART_VCOM_RTS_PORT         
 #define SL_IOSTREAM_USART_VCOM_RTS_PORT          SL_GPIO_PORT_A
 #endif
 #ifndef SL_IOSTREAM_USART_VCOM_RTS_PIN          
-#define SL_IOSTREAM_USART_VCOM_RTS_PIN           8
+#define SL_IOSTREAM_USART_VCOM_RTS_PIN           7
 #endif
 // [USART_SL_IOSTREAM_USART_VCOM]$
 // <<< sl:end pin_tool >>>
