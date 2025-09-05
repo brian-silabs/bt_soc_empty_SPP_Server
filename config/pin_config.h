@@ -210,20 +210,20 @@
 #define USART1_RTS_PIN                           7
 #endif
 
-// USART1 RX on PA06
+// USART1 RX on PB01
 #ifndef USART1_RX_PORT                          
-#define USART1_RX_PORT                           SL_GPIO_PORT_A
+#define USART1_RX_PORT                           SL_GPIO_PORT_B
 #endif
 #ifndef USART1_RX_PIN                           
-#define USART1_RX_PIN                            6
+#define USART1_RX_PIN                            1
 #endif
 
-// USART1 TX on PA05
+// USART1 TX on PB02
 #ifndef USART1_TX_PORT                          
-#define USART1_TX_PORT                           SL_GPIO_PORT_A
+#define USART1_TX_PORT                           SL_GPIO_PORT_B
 #endif
 #ifndef USART1_TX_PIN                           
-#define USART1_TX_PIN                            5
+#define USART1_TX_PIN                            2
 #endif
 
 // [USART1]$

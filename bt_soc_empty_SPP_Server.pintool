@@ -18,8 +18,8 @@
     <property object="PORTIO" propertyId="portio.usart1.enable.tx" value="Enabled"/>
     <property object="PORTIO" propertyId="portio.usart1.location.cts" value="8"/>
     <property object="PORTIO" propertyId="portio.usart1.location.rts" value="7"/>
-    <property object="PORTIO" propertyId="portio.usart1.location.rx" value="6"/>
-    <property object="PORTIO" propertyId="portio.usart1.location.tx" value="5"/>
+    <property object="PORTIO" propertyId="portio.usart1.location.rx" value="17"/>
+    <property object="PORTIO" propertyId="portio.usart1.location.tx" value="18"/>
     <property object="PTI" propertyId="ABModule.selectedRequirement" value="pti%T%SL_RAIL_UTIL_PTI%T%sl_rail_util_pti_config.h"/>
     <property object="PTI" propertyId="ABPeripheral.included" value="true"/>
     <property object="USART0" propertyId="ABPeripheral.included" value="true"/>
