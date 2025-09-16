@@ -5,7 +5,7 @@
   "name" : "Silicon-Laboratories",
   "documentNamespace" : "https://silabs.com",
   "creationInfo" : {
-    "created" : "2025-06-30T14:26:39.879380Z",
+    "created" : "2025-09-16T07:50:10.905505900Z",
     "creators" : [ "Tool: Silicon Labs Configuration Tooling" ]
   },
   "comment" : "TERMS OF USE - SILICON LABORATORIES INC.\n(With respect to Silicon Labs software components, this Software Bill of Materials (SBOM) is based upon Silicon Labs'\nreview and analysis of the code version when released.  It is provided \"AS IS\" and does not modify, change or alter\nthe terms or conditions of your use of Silicon Labs' software and/or SDKs based upon license terms and/or agreements\nassociated with this software or SDKs when distributed to you, received by you, or installed by you.  Further, no\nwarranties or obligations are created by this SBOM.  It is your obligation to comply with the terms of licenses\nreferenced in this SBOM.)",
@@ -28,6 +28,14 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-app_assert",
     "name" : "Assert",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-app_log",
+    "name" : "Log",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -146,6 +154,14 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart",
+    "name" : "IO Stream: USART",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-mpu",
     "name" : "Simple MPU",
     "versionInfo" : "2025.6.0",
@@ -164,6 +180,14 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_main",
     "name" : "System Setup (sl_main)",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv_core",
+    "name" : "DMADRV Core",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -304,6 +328,14 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_retarget_stdio",
+    "name" : "IO Stream: Retarget STDIO",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-emlib_ldma",
     "name" : "LDMA",
     "versionInfo" : "2025.6.0",
@@ -354,6 +386,14 @@
     "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
     "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream",
+    "name" : "IO Stream",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_aes",
     "name" : "AES Block Cipher",
     "versionInfo" : "2025.6.0",
@@ -396,16 +436,16 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sli_crypto_s2",
-    "name" : "Accelerated Crypto Primitives for Series-2 devices",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-enum",
+    "name" : "Enumerations",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-enum",
-    "name" : "Enumerations",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sli_crypto_s2",
+    "name" : "Accelerated Crypto Primitives for Series-2 devices",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -478,6 +518,22 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-code_classification",
     "name" : "Code Classification",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart_core",
+    "name" : "IO Stream: USART Core",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-configuration_over_swo",
+    "name" : "Configuration Over SWO",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -580,8 +636,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-hfxo_manager",
-    "name" : "HFXO Manager",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv",
+    "name" : "DMADRV",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -622,6 +678,14 @@
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-ecode",
     "name" : "EMDRV Common Headers",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_uart_common",
+    "name" : "IO Stream: Common code for UART-type streams",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -990,8 +1054,8 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-power_manager_deepsleep",
-    "name" : "Power Manager: Deepsleep",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-debug_swo",
+    "name" : "SWO Debug",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -1022,6 +1086,14 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "MSLA"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_string",
+    "name" : "String Functions",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-bluetooth_host_adaptation",
     "name" : "System adaptation layer used by the Bluetooth host stack",
     "versionInfo" : "2025.6.0",
@@ -1029,6 +1101,14 @@
     "downloadLocation" : "NOASSERTION",
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib AND MSLA"
+  }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-emlib_usart",
+    "name" : "USART",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-bluetooth_common",
     "name" : "Bluetooth Low Energy Common Component",
@@ -1226,6 +1306,14 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_stdlib_config",
+    "name" : "IO Stream: STDLIB Configuration",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-bootloader_interface",
     "name" : "Bootloader Application Interface",
     "versionInfo" : "2025.6.0",
@@ -1341,6 +1429,14 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "MSLA"
   }, {
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_common",
+    "name" : "Common Functions",
+    "versionInfo" : "2025.6.0",
+    "primaryPackagePurpose" : "LIBRARY",
+    "downloadLocation" : "NOASSERTION",
+    "supplier" : "Organization: Silicon Laboratories, Inc.",
+    "licenseConcluded" : "Zlib"
+  }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-mbedtls_config",
     "name" : "Configuration",
     "versionInfo" : "2025.6.0",
@@ -1358,14 +1454,6 @@
     "originator" : "Organization: NOASSERTION",
     "homepage" : "https://github.com/Mbed-TLS/mbedtls.git",
     "comment" : "Mbed TLS is a C library implementing the PSA Cryptography API, cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_common",
-    "name" : "Common Functions",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
   }, {
     "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-brd2703a",
     "name" : "BRD2703A",
@@ -1399,104 +1487,16 @@
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart",
-    "name" : "IO Stream: USART",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-hfxo_manager",
+    "name" : "HFXO Manager",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
     "supplier" : "Organization: Silicon Laboratories, Inc.",
     "licenseConcluded" : "Zlib"
   }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv_core",
-    "name" : "DMADRV Core",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream",
-    "name" : "IO Stream",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart_core",
-    "name" : "IO Stream: USART Core",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-configuration_over_swo",
-    "name" : "Configuration Over SWO",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv",
-    "name" : "DMADRV",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_uart_common",
-    "name" : "IO Stream: Common code for UART-type streams",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-debug_swo",
-    "name" : "SWO Debug",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-sl_string",
-    "name" : "String Functions",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-emlib_usart",
-    "name" : "USART",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-app_log",
-    "name" : "Log",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_retarget_stdio",
-    "name" : "IO Stream: Retarget STDIO",
-    "versionInfo" : "2025.6.0",
-    "primaryPackagePurpose" : "LIBRARY",
-    "downloadLocation" : "NOASSERTION",
-    "supplier" : "Organization: Silicon Laboratories, Inc.",
-    "licenseConcluded" : "Zlib"
-  }, {
-    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_stdlib_config",
-    "name" : "IO Stream: STDLIB Configuration",
+    "SPDXID" : "SPDXRef-simplicity_sdk-2025.6.0-power_manager_deepsleep",
+    "name" : "Power Manager: Deepsleep",
     "versionInfo" : "2025.6.0",
     "primaryPackagePurpose" : "LIBRARY",
     "downloadLocation" : "NOASSERTION",
@@ -1514,6 +1514,10 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-app_assert",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-app_log",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -1573,6 +1577,10 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-mpu",
     "relationshipType" : "CONTAINS"
   }, {
@@ -1582,6 +1590,10 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sl_main",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv_core",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -1649,6 +1661,10 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_retarget_stdio",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-emlib_ldma",
     "relationshipType" : "CONTAINS"
   }, {
@@ -1673,6 +1689,10 @@
     "relationshipType" : "ANCESTOR_OF"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-psa_crypto_aes",
     "relationshipType" : "CONTAINS"
   }, {
@@ -1693,11 +1713,11 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sli_crypto_s2",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-enum",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-enum",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sli_crypto_s2",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -1734,6 +1754,14 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-code_classification",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart_core",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-configuration_over_swo",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -1785,7 +1813,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-hfxo_manager",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -1806,6 +1834,10 @@
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-ecode",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_uart_common",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -1985,7 +2017,7 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-power_manager_deepsleep",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-debug_swo",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -2001,7 +2033,15 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sl_string",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-bluetooth_host_adaptation",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-emlib_usart",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
@@ -2101,6 +2141,10 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_stdlib_config",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-bootloader_interface",
     "relationshipType" : "CONTAINS"
   }, {
@@ -2153,16 +2197,16 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sl_common",
+    "relationshipType" : "CONTAINS"
+  }, {
+    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-mbedtls_config",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0-mbedtls_config",
     "relatedSpdxElement" : "SPDXRef-mbedtls_config-v3.6.2",
     "relationshipType" : "ANCESTOR_OF"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sl_common",
-    "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
     "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-brd2703a",
@@ -2181,55 +2225,11 @@
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-hfxo_manager",
     "relationshipType" : "CONTAINS"
   }, {
     "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv_core",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_usart_core",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-configuration_over_swo",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-dmadrv",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_uart_common",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-debug_swo",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-sl_string",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-emlib_usart",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-app_log",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_retarget_stdio",
-    "relationshipType" : "CONTAINS"
-  }, {
-    "spdxElementId" : "SPDXRef-simplicity_sdk-2025.6.0",
-    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-iostream_stdlib_config",
+    "relatedSpdxElement" : "SPDXRef-simplicity_sdk-2025.6.0-power_manager_deepsleep",
     "relationshipType" : "CONTAINS"
   } ]
 }

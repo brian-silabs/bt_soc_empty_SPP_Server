@@ -154,7 +154,7 @@ static void reset_variables()
 
 void my_rx_callback(void *data) {
   // Handle received data here
-  app_log("New data\r\n");
+//  app_log("New data\r\n");
   app_proceed();
 }
 
@@ -360,16 +360,25 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 
     case sl_bt_evt_gatt_server_attribute_value_id:
     {
+      uint8_t fw_data_buffer[512] = "at+forward=";
+
       // Data received over BLE (in the RX Characteristic) is sent over UART
       if (evt->data.evt_gatt_server_attribute_value.attribute == gattdb_spp_data_rx)
       {
           if (evt->data.evt_gatt_server_attribute_value.value.len != 0) {
             for (uint8_t i = 0;
                  i < evt->data.evt_gatt_server_attribute_value.value.len; i++) {
-              sl_iostream_putchar(
-                sl_iostream_vcom_handle,
-                evt->data.evt_gatt_server_attribute_value.value.data[i]);
+                fw_data_buffer[sizeof("at+forward=") - 1 + i] = evt->data.evt_gatt_server_attribute_value.value.data[i];
+//              sl_iostream_putchar(
+//                sl_iostream_vcom_handle,
+//                evt->data.evt_gatt_server_attribute_value.value.data[i]);
             }
+            for (uint8_t j = 0;
+                 j < sizeof("at+forward=") - 1 + evt->data.evt_gatt_server_attribute_value.value.len; j++) {
+                sl_iostream_putchar(
+                  sl_iostream_vcom_handle,
+                  fw_data_buffer[j]);
+              }
             counters.num_pack_received++;
             counters.num_bytes_received +=
               evt->data.evt_gatt_server_attribute_value.value.len;
