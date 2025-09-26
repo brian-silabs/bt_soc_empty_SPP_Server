@@ -43,6 +43,8 @@
 #include "app_log.h"
 #include "app_assert.h"
 
+#include "utests.h"
+
 /*******************************************************************************
  *    Local Macros and Definitions
  ******************************************************************************/
@@ -154,7 +156,7 @@ static void reset_variables()
 
 void my_rx_callback(void *data) {
   // Handle received data here
-  app_log("New data\r\n");
+  //app_log("New data\r\n");
   app_proceed();
 }
 
@@ -211,6 +213,10 @@ void app_init(void)
                                                                my_rx_callback,
                                                                NULL);
   app_assert_status(status);
+
+#if UTESTS_ENABLED
+  utests_init();
+#endif
 
   //sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM1);// Never go to sleep mode
 
@@ -383,6 +389,11 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
     default:
       break;
   }
+
+#if UTESTS_ENABLED
+  utests_on_event(evt);
+#endif
+
 }
 
 static void print_stats(ts_counters *p_counters)
