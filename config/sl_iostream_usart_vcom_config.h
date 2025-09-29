@@ -96,7 +96,7 @@
 #define SL_IOSTREAM_USART_VCOM_TX_PORT           SL_GPIO_PORT_D
 #endif
 #ifndef SL_IOSTREAM_USART_VCOM_TX_PIN           
-#define SL_IOSTREAM_USART_VCOM_TX_PIN            5
+#define SL_IOSTREAM_USART_VCOM_TX_PIN            4
 #endif
 
 // USART0 RX on PD05
@@ -104,7 +104,7 @@
 #define SL_IOSTREAM_USART_VCOM_RX_PORT           SL_GPIO_PORT_D
 #endif
 #ifndef SL_IOSTREAM_USART_VCOM_RX_PIN           
-#define SL_IOSTREAM_USART_VCOM_RX_PIN            4
+#define SL_IOSTREAM_USART_VCOM_RX_PIN            5
 #endif
 
 // USART0 CTS on PA09
