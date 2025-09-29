@@ -441,7 +441,7 @@ int bg22_format_notification(const bg22_at_notification_t* notify, char* output,
 
               for (int i = 0; i < notify->data.bounded.count; i++) {
                   if (i > 0) {
-                      if (written >= output_size - 1) return -1;
+                      if ((unsigned int) written >= output_size - 1) return -1;
                       output[written++] = ';';
                   }
 
