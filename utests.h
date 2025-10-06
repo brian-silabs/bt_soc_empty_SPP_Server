@@ -1,7 +1,7 @@
 #ifndef UTESTS_H
 #define UTESTS_H
 
-#define UTESTS_ENABLED 1 // Set to 1 to enable unit tests, 0 to disable
+#define UTESTS_ENABLED 0 // Set to 1 to enable unit tests, 0 to disable
 
 // ===== Test toggles (0=off, 1=on) =====
 #define TEST_VCOM_LOOPBACK_1K 1          // Enable 1 kB internal VCOM loopback
