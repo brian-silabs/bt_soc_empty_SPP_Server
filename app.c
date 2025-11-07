@@ -27,11 +27,15 @@
  * 3. This notice may not be removed or altered from any source distribution.
  *
  ******************************************************************************/
-#include "sl_bt_api.h"
+#include <stdio.h>
+
+ #include "sl_bt_api.h"
 #include "sl_main_init.h"
 
 #include "sl_common.h"
 #include "sl_iostream_handles.h"
+#include "sli_iostream_uart.h"
+#include "sl_iostream.h"
 #include "sl_bluetooth.h"
 #include "gatt_db.h"
 #include "app.h"
@@ -202,6 +206,14 @@ void app_init(void)
   // Put your additional application init code here!                         //
   // This is called once during start-up.                                    //
   /////////////////////////////////////////////////////////////////////////////
+
+  sl_status_t status = sli_iostream_uart_subscribe_to_new_data(sl_iostream_uart_vcom_handle,
+                                                               my_rx_callback,
+                                                               NULL);
+  app_assert_status(status);
+
+  //sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM1);// Never go to sleep mode
+
 }
 
 // Application Process Action.
@@ -214,10 +226,21 @@ void app_process_action(void)
     // Do not call blocking functions from here!                               //
     /////////////////////////////////////////////////////////////////////////////
 
+    // TODO data available, check for management frames
+
+    // Parse : data from the main MCU
+
+    // - Set Device name / MAC Address
+    // - Start / Stop BLE
+    // - Start / Stop Advertising
+    // - Get / Device
+
+    //parse_main_mcu_command(command)
+
+
     if (STATE_SPP_MODE == main_state) {
       send_spp_data();
     }
-
   }
 }
 
@@ -241,24 +264,30 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
       reset_variables();
       sc = sl_bt_gatt_server_set_max_mtu(247, &max_mtu_out);
       app_assert_status(sc);
-      // Create an advertising set.
-      sc = sl_bt_advertiser_create_set(&advertising_set_handle);
+
+      // Retrieve the device MAC and append its 4 last digits to the device name
+      bd_addr address;
+      sc = sl_bt_system_get_identity_address(&address, NULL);
       app_assert_status(sc);
-      // Generate data for advertising
-      sc = sl_bt_legacy_advertiser_generate_data(advertising_set_handle,
-                                                 sl_bt_advertiser_general_discoverable);
+
+      app_log("Device address: %02X:%02X:%02X:%02X:%02X:%02X\r\n",
+              address.addr[5], address.addr[4], address.addr[3],
+              address.addr[2], address.addr[1], address.addr[0]);
+
+
+      // TODO Place this code where we receive the final ID
+
+      // Apply received device name by driver or keypad to characteristic
+      // Set the device name to "BBK_XXXX" where XXXX is the last 4 digits of
+      // the device MAC address.
+      char device_name[9];
+      sprintf(device_name, "BBK_%02X%02X", address.addr[1], address.addr[0]);
+
+      sc = set_device_name(device_name);
       app_assert_status(sc);
-      // Set advertising interval to 100ms.
-      sc = sl_bt_advertiser_set_timing(
-        advertising_set_handle,
-        160,   // min. adv. interval (milliseconds * 1.6)
-        160,   // max. adv. interval (milliseconds * 1.6)
-        0,     // adv. duration
-        0);    // max. num. adv. events
-      app_assert_status(sc);
-      // Start  advertising and enable connections
-      sc = sl_bt_legacy_advertiser_start(advertising_set_handle,
-                                         sl_bt_legacy_advertiser_connectable);
+
+      // Wait for Push Button / Event
+      sc = start_advertising();
       app_assert_status(sc);
 
       break;
@@ -295,6 +324,7 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 
     case sl_bt_evt_connection_closed_id:
       print_stats(&counters);
+      app_log("Connection closed\r\n");
       if (STATE_SPP_MODE == main_state) {
         sl_power_manager_remove_em_requirement(SL_POWER_MANAGER_EM1);
       }
@@ -309,7 +339,8 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
       sl_bt_evt_gatt_server_characteristic_status_t char_status;
       char_status = evt->data.evt_gatt_server_characteristic_status;
 
-      if (char_status.characteristic == gattdb_spp_data_r || char_status.characteristic == gattdb_spp_data_w ) {
+      // We consider the tunnel opened only if our client has subscribed to notifications on the TX side
+      if (char_status.characteristic == gattdb_spp_data_tx) {
         if (char_status.status_flags == sl_bt_gatt_server_client_config) {
           // Characteristic client configuration (CCC) for spp_data has been
           //   changed
@@ -330,16 +361,29 @@ void sl_bt_on_event(sl_bt_msg_t *evt)
 
     case sl_bt_evt_gatt_server_attribute_value_id:
     {
-      if (evt->data.evt_gatt_server_attribute_value.value.len != 0) {
-        for (uint8_t i = 0;
-             i < evt->data.evt_gatt_server_attribute_value.value.len; i++) {
-          sl_iostream_putchar(
-            sl_iostream_vcom_handle,
-            evt->data.evt_gatt_server_attribute_value.value.data[i]);
-        }
-        counters.num_pack_received++;
-        counters.num_bytes_received +=
-          evt->data.evt_gatt_server_attribute_value.value.len;
+//      uint8_t fw_data_buffer[512] = "at+forward=";
+
+      // Data received over BLE (in the RX Characteristic) is sent over UART
+      if (evt->data.evt_gatt_server_attribute_value.attribute == gattdb_spp_data_rx)
+      {
+          if (evt->data.evt_gatt_server_attribute_value.value.len != 0) {
+            for (uint8_t i = 0;
+                 i < evt->data.evt_gatt_server_attribute_value.value.len; i++) {
+//                fw_data_buffer[sizeof("at+forward=") - 1 + i] = evt->data.evt_gatt_server_attribute_value.value.data[i];
+              sl_iostream_putchar(
+                sl_iostream_vcom_handle,
+                evt->data.evt_gatt_server_attribute_value.value.data[i]);
+            }
+//            for (uint8_t j = 0;
+//                 j < sizeof("at+forward=") - 1 + evt->data.evt_gatt_server_attribute_value.value.len; j++) {
+//                sl_iostream_putchar(
+//                  sl_iostream_vcom_handle,
+//                  fw_data_buffer[j]);
+//              }
+            counters.num_pack_received++;
+            counters.num_bytes_received +=
+              evt->data.evt_gatt_server_attribute_value.value.len;
+          }
       }
     }
     break;
@@ -404,7 +448,7 @@ static void send_spp_data()
     //   command succeeds
     do {
       result = sl_bt_gatt_server_send_notification(conn_handle,
-                                                   gattdb_spp_data_w,
+                                                   gattdb_spp_data_tx,
                                                    len,
                                                    data);
       counters.num_writes++;

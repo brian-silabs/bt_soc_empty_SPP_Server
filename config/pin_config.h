@@ -94,30 +94,6 @@
 // [TIMER4]$
 
 // $[USART0]
-// USART0 CTS on PA00
-#ifndef USART0_CTS_PORT                         
-#define USART0_CTS_PORT                          SL_GPIO_PORT_A
-#endif
-#ifndef USART0_CTS_PIN                          
-#define USART0_CTS_PIN                           0
-#endif
-
-// USART0 RX on PA00
-#ifndef USART0_RX_PORT                          
-#define USART0_RX_PORT                           SL_GPIO_PORT_A
-#endif
-#ifndef USART0_RX_PIN                           
-#define USART0_RX_PIN                            0
-#endif
-
-// USART0 TX on PA00
-#ifndef USART0_TX_PORT                          
-#define USART0_TX_PORT                           SL_GPIO_PORT_A
-#endif
-#ifndef USART0_TX_PIN                           
-#define USART0_TX_PIN                            0
-#endif
-
 // [USART0]$
 
 // $[I2C1]
@@ -194,43 +170,43 @@
 #endif // PIN_CONFIG_H
 
 // $[USART1]
-// USART1 CTS on PA08
-#ifndef USART1_CTS_PORT                         
-#define USART1_CTS_PORT                          SL_GPIO_PORT_A
-#endif
-#ifndef USART1_CTS_PIN                          
-#define USART1_CTS_PIN                           8
-#endif
-
-// USART1 RTS on PA07
-#ifndef USART1_RTS_PORT                         
-#define USART1_RTS_PORT                          SL_GPIO_PORT_A
-#endif
-#ifndef USART1_RTS_PIN                          
-#define USART1_RTS_PIN                           7
-#endif
-
-// USART1 RX on PB01
-#ifndef USART1_RX_PORT                          
-#define USART1_RX_PORT                           SL_GPIO_PORT_B
-#endif
-#ifndef USART1_RX_PIN                           
-#define USART1_RX_PIN                            1
-#endif
-
-// USART1 TX on PB02
-#ifndef USART1_TX_PORT                          
-#define USART1_TX_PORT                           SL_GPIO_PORT_B
-#endif
-#ifndef USART1_TX_PIN                           
-#define USART1_TX_PIN                            2
-#endif
-
 // [USART1]$
 
 // $[PDM]
 // [PDM]$
 
 // $[EUART0]
+// EUART0 CTS on PA08
+#ifndef EUART0_CTS_PORT                         
+#define EUART0_CTS_PORT                          SL_GPIO_PORT_A
+#endif
+#ifndef EUART0_CTS_PIN                          
+#define EUART0_CTS_PIN                           8
+#endif
+
+// EUART0 RTS on PA07
+#ifndef EUART0_RTS_PORT                         
+#define EUART0_RTS_PORT                          SL_GPIO_PORT_A
+#endif
+#ifndef EUART0_RTS_PIN                          
+#define EUART0_RTS_PIN                           7
+#endif
+
+// EUART0 RX on PA06
+#ifndef EUART0_RX_PORT                          
+#define EUART0_RX_PORT                           SL_GPIO_PORT_A
+#endif
+#ifndef EUART0_RX_PIN                           
+#define EUART0_RX_PIN                            6
+#endif
+
+// EUART0 TX on PA05
+#ifndef EUART0_TX_PORT                          
+#define EUART0_TX_PORT                           SL_GPIO_PORT_A
+#endif
+#ifndef EUART0_TX_PIN                           
+#define EUART0_TX_PIN                            5
+#endif
+
 // [EUART0]$
 

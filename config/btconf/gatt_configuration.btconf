@@ -8,7 +8,7 @@
 
     <!--Device Name-->
     <characteristic const="false" id="device_name" name="Device Name" sourceId="org.bluetooth.characteristic.gap.device_name" uuid="2A00">
-      <value length="11" type="utf-8" variable_length="false">SPP Example</value>
+      <value length="8" type="utf-8" variable_length="false">BBK_XXXX</value>
       <properties>
         <read authenticated="false" bonded="false" encrypted="false"/>
         <write authenticated="false" bonded="false" encrypted="false"/>
@@ -76,22 +76,35 @@
   </service>
 
   <!--SPP Service-->
-  <service advertise="true" name="SPP Service" requirement="mandatory" sourceId="" type="primary" uuid="4880c12c-fdcb-4077-8920-a450d7f9b907">
+  <service advertise="false" name="SPP Service" requirement="mandatory" sourceId="" type="primary" uuid="4880c12c-fdcb-4077-8920-a450d7f9b907">
 
-    <!--SPP Read-->
-    <characteristic const="false" id="spp_data_r" name="SPP Read" sourceId="" uuid="49a023f5-5d5a-46b0-8044-3c088cc5e47e">
-      <value length="20" type="hex" variable_length="true">00</value>
-      <properties>
-        <read authenticated="false" bonded="false" encrypted="false"/>
-        <notify authenticated="false" bonded="false" encrypted="false"/>
-      </properties>
-    </characteristic>
-
-    <!--SPP Write-->
-    <characteristic const="false" id="spp_data_w" name="SPP Write" sourceId="" uuid="49a023f8-5d5a-46b0-8044-3c088cc5e47e">
+    <!--SPP Data-->
+    <characteristic const="false" id="spp_data" name="SPP Data" sourceId="" uuid="fec26ec4-6d71-4442-9f81-55bc21d658d6">
       <value length="20" type="hex" variable_length="true">00</value>
       <properties>
         <write_no_response authenticated="false" bonded="false" encrypted="false"/>
+        <notify authenticated="false" bonded="false" encrypted="false"/>
+      </properties>
+    </characteristic>
+  </service>
+
+  <!--NUS Service-->
+  <service advertise="true" name="NUS Service" requirement="mandatory" sourceId="" type="primary" uuid="6E400001-B5A3-F393-E0A9-E50E24DCCA9E">
+
+    <!--SPP Data RX-->
+    <characteristic const="false" id="spp_data_rx" name="SPP Data RX" sourceId="" uuid="6E400002-B5A3-F393-E0A9-E50E24DCCA9E">
+      <value length="247" type="hex" variable_length="true">00</value>
+      <properties>
+        <write authenticated="false" bonded="false" encrypted="false"/>
+        <write_no_response authenticated="false" bonded="false" encrypted="false"/>
+      </properties>
+    </characteristic>
+
+    <!--SPP Data TX-->
+    <characteristic const="false" id="spp_data_tx" name="SPP Data TX" sourceId="" uuid="6E400003-B5A3-F393-E0A9-E50E24DCCA9E">
+      <value length="247" type="hex" variable_length="true">00</value>
+      <properties>
+        <notify authenticated="false" bonded="false" encrypted="false"/>
       </properties>
     </characteristic>
   </service>

@@ -13,8 +13,8 @@
 #include "sl_bluetooth.h"
 #include "sl_debug_swo.h"
 #include "sl_gpio.h"
+#include "sl_iostream_init_eusart_instances.h"
 #include "sl_iostream_stdlib_config.h"
-#include "sl_iostream_init_usart_instances.h"
 #include "sl_mbedtls.h"
 #include "psa/crypto.h"
 #include "sl_se_manager.h"
@@ -110,7 +110,7 @@ void sli_internal_app_process_action(void)
 
 void sl_iostream_init_instances_stage_1(void)
 {
-  sl_iostream_usart_init_instances();
+  sl_iostream_eusart_init_instances();
 }
 
 void sl_iostream_init_instances_stage_2(void)

@@ -165,18 +165,18 @@
         <folder name="iostream">
           <folder name="src">
             <file name="sl_iostream.c" linked="false" uri="studio:/sdk/platform/service/iostream/src/sl_iostream.c"/>
+            <file name="sl_iostream_eusart.c" linked="false" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_eusart.c"/>
             <file name="sl_iostream_retarget_stdio.c" linked="false" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_retarget_stdio.c"/>
             <file name="sl_iostream_stdlib_config.c" linked="false" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_stdlib_config.c"/>
             <file name="sl_iostream_uart.c" linked="false" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_uart.c"/>
-            <file name="sl_iostream_usart.c" linked="false" uri="studio:/sdk/platform/service/iostream/src/sl_iostream_usart.c"/>
           </folder>
           <folder name="inc">
             <file name="sl_iostream.h" linked="false" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream.h"/>
             <file name="sli_iostream.h" linked="false" uri="studio:/sdk/platform/service/iostream/inc/sli_iostream.h"/>
+            <file name="sl_iostream_eusart.h" linked="false" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_eusart.h"/>
             <file name="sl_iostream_stdlib_config.h" linked="false" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_stdlib_config.h"/>
             <file name="sl_iostream_uart.h" linked="false" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_uart.h"/>
             <file name="sli_iostream_uart.h" linked="false" uri="studio:/sdk/platform/service/iostream/inc/sli_iostream_uart.h"/>
-            <file name="sl_iostream_usart.h" linked="false" uri="studio:/sdk/platform/service/iostream/inc/sl_iostream_usart.h"/>
           </folder>
         </folder>
         <folder name="memory_manager">
@@ -349,6 +349,7 @@
           <file name="em_burtc.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_burtc.c"/>
           <file name="em_cmu.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_cmu.c"/>
           <file name="em_emu.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_emu.c"/>
+          <file name="em_eusart.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_eusart.c"/>
           <file name="em_gpio.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_gpio.c"/>
           <file name="em_iadc.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_iadc.c"/>
           <file name="em_ldma.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_ldma.c"/>
@@ -357,7 +358,6 @@
           <file name="em_rtcc.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_rtcc.c"/>
           <file name="em_system.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_system.c"/>
           <file name="em_timer.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_timer.c"/>
-          <file name="em_usart.c" linked="false" uri="studio:/sdk/platform/emlib/src/em_usart.c"/>
         </folder>
         <folder name="inc">
           <file name="em_burtc.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_burtc.h"/>
@@ -373,6 +373,8 @@
           <file name="em_core.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_core.h"/>
           <file name="em_core_generic.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_core_generic.h"/>
           <file name="em_emu.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_emu.h"/>
+          <file name="em_eusart.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_eusart.h"/>
+          <file name="em_eusart_compat.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_eusart_compat.h"/>
           <file name="em_gpio.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_gpio.h"/>
           <file name="em_iadc.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_iadc.h"/>
           <file name="em_ldma.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_ldma.h"/>
@@ -384,19 +386,23 @@
           <file name="em_system.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_system.h"/>
           <file name="em_system_generic.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_system_generic.h"/>
           <file name="em_timer.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_timer.h"/>
-          <file name="em_usart.h" linked="false" uri="studio:/sdk/platform/emlib/inc/em_usart.h"/>
         </folder>
       </folder>
       <folder name="peripheral">
         <folder name="inc">
           <file name="sl_hal_bus.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_bus.h"/>
+          <file name="sl_hal_eusart.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_eusart.h"/>
           <file name="sl_hal_gpio.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_gpio.h"/>
+          <file name="sl_hal_prs.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_prs.h"/>
+          <file name="sl_hal_prs_enums.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_prs_enums.h"/>
           <file name="sl_hal_syscfg.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_syscfg.h"/>
           <file name="sl_hal_system.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_system.h"/>
           <file name="sl_hal_system_generic.h" linked="false" uri="studio:/sdk/platform/peripheral/inc/sl_hal_system_generic.h"/>
         </folder>
         <folder name="src">
+          <file name="sl_hal_eusart.c" linked="false" uri="studio:/sdk/platform/peripheral/src/sl_hal_eusart.c"/>
           <file name="sl_hal_gpio.c" linked="false" uri="studio:/sdk/platform/peripheral/src/sl_hal_gpio.c"/>
+          <file name="sl_hal_prs.c" linked="false" uri="studio:/sdk/platform/peripheral/src/sl_hal_prs.c"/>
           <file name="sl_hal_system.c" linked="false" uri="studio:/sdk/platform/peripheral/src/sl_hal_system.c"/>
         </folder>
       </folder>
