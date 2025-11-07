@@ -94,44 +94,28 @@
 // [TIMER4]$
 
 // $[USART0]
-// USART0 CTS on PA09
-#ifndef USART0_CTS_PORT                         
-#define USART0_CTS_PORT                          SL_GPIO_PORT_A
-#endif
-#ifndef USART0_CTS_PIN                          
-#define USART0_CTS_PIN                           9
-#endif
-
-// USART0 RTS on PA08
-#ifndef USART0_RTS_PORT                         
-#define USART0_RTS_PORT                          SL_GPIO_PORT_A
-#endif
-#ifndef USART0_RTS_PIN                          
-#define USART0_RTS_PIN                           8
-#endif
-
-// USART0 RX on PD05
-#ifndef USART0_RX_PORT                          
-#define USART0_RX_PORT                           SL_GPIO_PORT_D
-#endif
-#ifndef USART0_RX_PIN                           
-#define USART0_RX_PIN                            5
-#endif
-
-// USART0 TX on PD04
-#ifndef USART0_TX_PORT                          
-#define USART0_TX_PORT                           SL_GPIO_PORT_D
-#endif
-#ifndef USART0_TX_PIN                           
-#define USART0_TX_PIN                            4
-#endif
-
 // [USART0]$
 
 // $[I2C1]
 // [I2C1]$
 
 // $[EUSART1]
+// EUSART1 RX on PD05
+#ifndef EUSART1_RX_PORT                         
+#define EUSART1_RX_PORT                          SL_GPIO_PORT_D
+#endif
+#ifndef EUSART1_RX_PIN                          
+#define EUSART1_RX_PIN                           5
+#endif
+
+// EUSART1 TX on PD04
+#ifndef EUSART1_TX_PORT                         
+#define EUSART1_TX_PORT                          SL_GPIO_PORT_D
+#endif
+#ifndef EUSART1_TX_PIN                          
+#define EUSART1_TX_PIN                           4
+#endif
+
 // [EUSART1]$
 
 // $[KEYSCAN]

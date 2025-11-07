@@ -38,7 +38,7 @@ extern const sli_bt_gattdb_t gattdb;
 #define gattdb_firmware_revision_string_len   8
 #define gattdb_system_id_len                  8
 #define gattdb_spp_data_len                   20
-#define gattdb_spp_data_rx_len                20
+#define gattdb_spp_data_rx_len                247
 #define gattdb_spp_data_tx_len                20
 #define gattdb_ota_len                        16
 

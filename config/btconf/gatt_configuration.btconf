@@ -118,7 +118,7 @@
 
     <!--SPP Data RX-->
     <characteristic const="false" id="spp_data_rx" name="SPP Data RX" sourceId="" uuid="6E400002-B5A3-F393-E0A9-E50E24DCCA9E">
-      <value length="20" type="hex" variable_length="true">00</value>
+      <value length="247" type="hex" variable_length="true">00</value>
       <properties>
         <write authenticated="false" bonded="false" encrypted="false"/>
         <write_no_response authenticated="false" bonded="false" encrypted="false"/>

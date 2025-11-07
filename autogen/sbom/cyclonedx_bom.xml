@@ -10,7 +10,7 @@ referenced in this SBOM.)
 -->
 <bom xmlns="http://cyclonedx.org/schema/bom/1.6" version="1">
   <metadata>
-    <timestamp>2025-09-16T07:50:10.905505900Z</timestamp>
+    <timestamp>2025-10-29T14:48:19.604496300Z</timestamp>
     <authors>
       <author>
         <name>Silicon Laboratories, Inc.</name>
@@ -187,16 +187,6 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2025.6.0:in_place_ota_dfu" type="library">
           <name>In-Place OTA DFU</name>
-          <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.0:iostream_usart" type="library">
-          <name>IO Stream: USART</name>
           <version>2025.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -690,16 +680,6 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
-        <component bom-ref="simplicity_sdk:2025.6.0:iostream_usart_core" type="library">
-          <name>IO Stream: USART Core</name>
-          <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
-          </licenses>
-        </component>
         <component bom-ref="simplicity_sdk:2025.6.0:configuration_over_swo" type="library">
           <name>Configuration Over SWO</name>
           <version>2025.6.0</version>
@@ -822,6 +802,16 @@ referenced in this SBOM.)
         </component>
         <component bom-ref="simplicity_sdk:2025.6.0:psa_se_driver" type="library">
           <name>PSA SE Driver Source Code</name>
+          <version>2025.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.0:hfxo_manager" type="library">
+          <name>HFXO Manager</name>
           <version>2025.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -1385,6 +1375,16 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
+        <component bom-ref="simplicity_sdk:2025.6.0:power_manager_deepsleep" type="library">
+          <name>Power Manager: Deepsleep</name>
+          <version>2025.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
         <component bom-ref="simplicity_sdk:2025.6.0:debug_swo" type="library">
           <name>SWO Debug</name>
           <version>2025.6.0</version>
@@ -1443,16 +1443,6 @@ referenced in this SBOM.)
 	      </supplier>
           <licenses>
             <expression>Zlib AND MSLA</expression>
-          </licenses>
-        </component>
-        <component bom-ref="simplicity_sdk:2025.6.0:emlib_usart" type="library">
-          <name>USART</name>
-          <version>2025.6.0</version>
-	      <supplier>
-	        <name>Silicon Laboratories, Inc.</name>
-	      </supplier>
-          <licenses>
-            <expression>Zlib</expression>
           </licenses>
         </component>
         <component bom-ref="simplicity_sdk:2025.6.0:bluetooth_common" type="library">
@@ -1960,8 +1950,8 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
-        <component bom-ref="simplicity_sdk:2025.6.0:hfxo_manager" type="library">
-          <name>HFXO Manager</name>
+        <component bom-ref="simplicity_sdk:2025.6.0:emlib_eusart" type="library">
+          <name>EUSART</name>
           <version>2025.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
@@ -1970,8 +1960,38 @@ referenced in this SBOM.)
             <expression>Zlib</expression>
           </licenses>
         </component>
-        <component bom-ref="simplicity_sdk:2025.6.0:power_manager_deepsleep" type="library">
-          <name>Power Manager: Deepsleep</name>
+        <component bom-ref="simplicity_sdk:2025.6.0:hal_prs" type="library">
+          <name>PRS</name>
+          <version>2025.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.0:iostream_eusart" type="library">
+          <name>IO Stream: EUSART</name>
+          <version>2025.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.0:hal_eusart" type="library">
+          <name>EUSART</name>
+          <version>2025.6.0</version>
+	      <supplier>
+	        <name>Silicon Laboratories, Inc.</name>
+	      </supplier>
+          <licenses>
+            <expression>Zlib</expression>
+          </licenses>
+        </component>
+        <component bom-ref="simplicity_sdk:2025.6.0:iostream_eusart_core" type="library">
+          <name>IO Stream: EUSART Core</name>
           <version>2025.6.0</version>
 	      <supplier>
 	        <name>Silicon Laboratories, Inc.</name>
